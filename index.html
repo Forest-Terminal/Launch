@@ -9,19 +9,33 @@
             color: #ebdbb2;
             font-size: 2rem;
             padding: 1.3rem;
-            display: grid;
-            grid-template-columns: repeat(3, 300px);
-            gap: 1rem;
+            min-height: 100vh;
+            margin: 0;
+
+            display: flex;
             justify-content: center;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 1rem;
         }
 
         a {
             color: #83a598;
             text-decoration: none;
-            width: 300px;
+
+            width: 200px;
+            height: 200px;
+
             border-radius: 8px;
-            padding: 12px 6px;
             background-color: #3c3836;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             box-sizing: border-box;
         }
@@ -34,13 +48,15 @@
 </head>
 
 <body>
-    <a href="https://clever.com/in/hisd">Clever</a>
-    <a href="https://samlidp.clever.com/saml-canvas/signon">Canvas</a>
-    <a href="https://quest.cns.utexas.edu/student/">Quest</a>
-    <a href="https://drive.google.com/drive/folders/1Y-6G747RL9yPCxo6dtTeRGH7fniO4-L0?usp=drive_link">Precal BC Drive</a>
-    <a href="https://docs.google.com/spreadsheets/d/1Skqy7Dk1LEIgr5uKLH2FFrfCm1upYjNTwY_Bdq-uCP8/edit?usp=sharing">Precal BC Calendar</a>
-    <a href="https://calendar.google.com/calendar/">Google Calendar</a>
-    <a href="https://houstonisd-my.sharepoint.com/personal/kdavis12_houstonisd_org/_layouts/15/Doc.aspx?sourcedoc={c182b46a-f501-40b1-8a2e-12b4dcebbc8e}&action=view&wd=target%28WHAP%20Headers%20for%20Notes.one%7C26c1c29d-d335-43e6-bf79-5056daa7fbb1%2F8%5C%2F10-20%20Chapter%201%7C380b4fd8-4c6d-4e53-93c2-ddeb3c976f7c%2F%29&wdorigin=NavigationUrl">WHAP Notes</a>
-    <a href="https://myap.collegeboard.org">AP Classroom</a>
+    <div class="grid">
+        <a href="https://clever.com/in/hisd">Clever</a>
+        <a href="https://samlidp.clever.com/saml-canvas/signon">Canvas</a>
+        <a href="https://quest.cns.utexas.edu/student/">Quest</a>
+        <a href="https://drive.google.com/drive/folders/1Y-6G747RL9yPCxo6dtTeRGH7fniO4-L0?usp=drive_link">Precal BC Drive</a>
+        <a href="https://docs.google.com/spreadsheets/d/1Skqy7Dk1LEIgr5uKLH2FFrfCm1upYjNTwY_Bdq-uCP8/edit?usp=sharing">Precal BC Calendar</a>
+        <a href="https://calendar.google.com/calendar/">Google Calendar</a>
+        <a href="https://houstonisd-my.sharepoint.com/personal/kdavis12_houstonisd_org/_layouts/15/Doc.aspx?sourcedoc={c182b46a-f501-40b1-8a2e-12b4dcebbc8e}&action=view&wd=target%28WHAP%20Headers%20for%20Notes.one%7C26c1c29d-d335-43e6-bf79-5056daa7fbb1%2F8%5C%2F10-20%20Chapter%201%7C380b4fd8-4c6d-4e53-93c2-ddeb3c976f7c%2F%29&wdorigin=NavigationUrl">WHAP Notes</a>
+        <a href="https://myap.collegeboard.org">AP Classroom</a>
+    </div>
 </body>
 </html>
