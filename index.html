@@ -22,13 +22,12 @@
         body {
             background: #1d2021;
             color: #ebdbb2;
-            font-size: 2rem;
-            padding: 1.3rem;
 
             display: flex;
             justify-content: center;
             align-items: center;
 
+            padding: 1.3rem;
             overflow: hidden;
         }
 
@@ -38,18 +37,19 @@
             gap: 0.5rem;
 
             /*
-             * The grid is limited by both width and height.
-             * Since there are 3 rows, this keeps all buttons square.
+             * The grid is 3 columns × 3 rows.
+             * Calculate its maximum size from the viewport.
              */
             width: min(
                 90vw,
-                calc((90vh - 2.6rem) * 0.6667)
+                calc((90vh - 1rem) / 3 * 3)
             );
         }
 
         a {
-            width: 100%;
             aspect-ratio: 1 / 1;
+
+            width: 100%;
 
             border-radius: 8px;
             background-color: #3c3836;
@@ -63,6 +63,8 @@
 
             text-align: center;
             padding: 0.5rem;
+
+            font-size: clamp(1rem, 3vw, 2rem);
 
             transition:
                 color 0.15s ease,
@@ -81,75 +83,57 @@
 
     <div class="grid">
 
-        <a
-            href="https://clever.com/in/hisd"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://clever.com/in/hisd"
+           target="_blank"
+           rel="noopener noreferrer">
             Clever
         </a>
 
-        <a
-            href="https://samlidp.clever.com/saml-canvas/signon"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://samlidp.clever.com/saml-canvas/signon"
+           target="_blank"
+           rel="noopener noreferrer">
             Canvas
         </a>
 
-        <a
-            href="https://quest.cns.utexas.edu/student/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://quest.cns.utexas.edu/student/"
+           target="_blank"
+           rel="noopener noreferrer">
             Quest
         </a>
 
-        <a
-            href="https://drive.google.com/drive/folders/1Y-6G747RL9yPCxo6dtTeRGH7fniO4-L0?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://drive.google.com/drive/folders/1Y-6G747RL9yPCxo6dtTeRGH7fniO4-L0?usp=drive_link"
+           target="_blank"
+           rel="noopener noreferrer">
             Precal BC Drive
         </a>
 
-        <a
-            href="https://docs.google.com/spreadsheets/d/1Skqy7Dk1LEIgr5uKLH2FFrfCm1upYjNTwY_Bdq-uCP8/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://docs.google.com/spreadsheets/d/1Skqy7Dk1LEIgr5uKLH2FFrfCm1upYjNTwY_Bdq-uCP8/edit?usp=sharing"
+           target="_blank"
+           rel="noopener noreferrer">
             Precal BC Calendar
         </a>
 
-        <a
-            href="https://calendar.google.com/calendar/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://calendar.google.com/calendar/"
+           target="_blank"
+           rel="noopener noreferrer">
             Google<br>Calendar
         </a>
 
-        <a
-            href="https://houstonisd-my.sharepoint.com/personal/kdavis12_houstonisd_org/_layouts/15/Doc.aspx?sourcedoc={c182b46a-f501-40b1-8a2e-12b4dcebbc8e}&action=view&wd=target%28WHAP%20Headers%20for%20Notes.one%7C26c1c29d-d335-43e6-bf79-5056daa7fbb1%2F8%5C%2F10-20%20Chapter%201%7C380b4fd8-4c6d-4e53-93c2-ddeb3c976f7c%2F%29&wdorigin=NavigationUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://houstonisd-my.sharepoint.com/personal/kdavis12_houstonisd_org/_layouts/15/Doc.aspx?sourcedoc={c182b46a-f501-40b1-8a2e-12b4dcebbc8e}&action=view&wd=target%28WHAP%20Headers%20for%20Notes.one%7C26c1c29d-d335-43e6-bf79-5056daa7fbb1%2F8%5C%2F10-20%20Chapter%201%7C380b4fd8-4c6d-4e53-93c2-ddeb3c976f7c%2F%29&wdorigin=NavigationUrl"
+           target="_blank"
+           rel="noopener noreferrer">
             WHAP<br>Notes
         </a>
 
-        <a
-            href="https://myap.collegeboard.org"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://myap.collegeboard.org"
+           target="_blank"
+           rel="noopener noreferrer">
             AP<br>Classroom
         </a>
 
-        <a
-            href="https://delphi.tools/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <a href="https://delphi.tools/"
+           target="_blank"
+           rel="noopener noreferrer">
             Tools<br>(Delphi)
         </a>
 
